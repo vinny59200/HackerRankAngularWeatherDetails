@@ -23,7 +23,7 @@ export class WeatherDetails implements OnInit {
     // let string = this.celsius;
     // let num = parseInt(string) * 9 / 5 + 32;
     // this.fahrenheit = num.toString();
-    const filteredResult = this.weatherData.find((e) => e.name == searchValue);
+    const filteredResult = this.weatherData.find((e) => e.name.toLowerCase() === searchValue.toLowerCase());
     if (filteredResult) this.exist = true; else this.exist = false;
     if (this.exist) {
       this.temperature = filteredResult.temperature;
