@@ -1,0 +1,181 @@
+<?xml version="1.0"?>
+<testsuite name="HeadlessChrome 78.0.3904 (Linux 0.0.0)" package="unit" timestamp="2022-05-19T03:41:36" id="0" hostname="workspace5jbu4u835nrncsrw.ws-5d7b998886-xx4vl" tests="4" errors="0" failures="3" time="5.257">
+  <properties>
+    <property name="browser.fullName" value="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/78.0.3904.108 Safari/537.36"/>
+  </properties>
+  <testcase name="WeatherDetails Initial UI is rendered as expected" time="0.18" classname=".WeatherDetails">
+    <failure type="">Error: Expected &lt;div _ngcontent-a-c45 data-test-id="no-results" class="card-text"&gt;...&lt;/div&gt; to be falsy.
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/src/app/weatherDetails/weatherDetails.component.spec.ts:110:30
+    at &lt;Jasmine&gt;
+    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:71:42)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:857:1
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:399:1)
+</failure>
+  </testcase>
+  <testcase name="WeatherDetails Test with existing cities in both upper and small case" time="5.045" classname=".WeatherDetails">
+    <failure type="">Error: Timeout - Async function did not complete within 5000ms (set by jasmine.DEFAULT_TIMEOUT_INTERVAL)
+    at &lt;Jasmine&gt;
+</failure>
+  </testcase>
+  <testcase name="WeatherDetails Test with non-existing cities" time="0.018" classname=".WeatherDetails"/>
+  <testcase name="WeatherDetails Perform series of actions" time="0.014" classname=".WeatherDetails">
+    <failure type="">TypeError: Cannot read property 'innerHTML' of null
+    at &lt;Jasmine&gt;
+    at http://localhost:9876/_karma_webpack_/src/app/weatherDetails/weatherDetails.component.spec.ts:158:55
+    at &lt;Jasmine&gt;
+    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:71:42)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:857:1
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:399:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:323:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Zone.runTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:167:1)
+    at drainMicroTaskQueue (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:569:1)
+    at invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:484:1)
+    at ZoneTask.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:469:1)
+    at timer (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:2552:1)
+</failure>
+  </testcase>
+  <system-out>
+    <![CDATA[HeadlessChrome 78.0.3904 (Linux 0.0.0) LOG: 'Dallas'
+,HeadlessChrome 78.0.3904 (Linux 0.0.0) LOG: 'Portland'
+,HeadlessChrome 78.0.3904 (Linux 0.0.0) LOG: 'boston'
+,HeadlessChrome 78.0.3904 (Linux 0.0.0) ERROR: 'ERROR', TypeError: Cannot read property 'temperature' of undefined
+TypeError: Cannot read property 'temperature' of undefined
+    at WeatherDetails.onTownChange (http://localhost:9876/_karma_webpack_/src/app/weatherDetails/weatherDetails.component.ts:28:37)
+    at WeatherDetails_Template_input_input_4_listener (ng:///WeatherDetails.js:64:22)
+    at executeListenerWithErrorHandling (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14415:1)
+    at wrapListenerIn_markDirtyAndPreventDefault (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14456:1)
+    at HTMLInputElement.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js:582:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:399:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:323:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Object.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:273:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Object.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:27136:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Zone.runTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:167:1)
+    at ZoneTask.invokeTask [as invoke] (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:480:1)
+    at invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:1621:1)
+    at HTMLInputElement.globalZoneAwareCallback (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:1647:1)
+,HeadlessChrome 78.0.3904 (Linux 0.0.0) WARN: '%cUnhandled rejection TypeError: Cannot read property 'innerHTML' of null
+    at http://localhost:9876/_karma_webpack_/src/app/weatherDetails/weatherDetails.component.spec.ts:123:57
+    at Generator.next (<anonymous>)
+    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:71:42)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:857:1
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:399:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:323:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Zone.runTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:167:1)
+    at drainMicroTaskQueue (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:569:1)
+    at invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:484:1)
+    at ZoneTask.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:469:1)
+    at timer (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:2552:1)
+From previous event:
+    at http://localhost:9876/_karma_webpack_/src/app/weatherDetails/weatherDetails.component.spec.ts:119:14
+    at Generator.next (<anonymous>)
+    at fulfilled (http://localhost:9876/_karma_webpack_/node_modules/tslib/tslib.es6.js:71:42)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:364:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:292:1)
+    at ZoneDelegate.invoke (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:363:1)
+    at Zone.run (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:123:1)
+    at http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:857:1
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:399:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:323:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Zone.runTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:167:1)
+    at drainMicroTaskQueue (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:569:1)
+    at invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:484:1)', 'color: red'
+,HeadlessChrome 78.0.3904 (Linux 0.0.0) LOG: 'Seattle'
+,HeadlessChrome 78.0.3904 (Linux 0.0.0) ERROR: 'ERROR', TypeError: Cannot read property 'temperature' of undefined
+TypeError: Cannot read property 'temperature' of undefined
+    at WeatherDetails.onTownChange (http://localhost:9876/_karma_webpack_/src/app/weatherDetails/weatherDetails.component.ts:28:37)
+    at WeatherDetails_Template_input_input_4_listener (ng:///WeatherDetails.js:64:22)
+    at executeListenerWithErrorHandling (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14415:1)
+    at wrapListenerIn_markDirtyAndPreventDefault (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14456:1)
+    at HTMLInputElement.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js:582:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:399:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:323:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Object.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:273:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Object.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:27136:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Zone.runTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:167:1)
+    at ZoneTask.invokeTask [as invoke] (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:480:1)
+    at invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:1621:1)
+    at HTMLInputElement.globalZoneAwareCallback (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:1647:1)
+,HeadlessChrome 78.0.3904 (Linux 0.0.0) LOG: 'new york'
+,HeadlessChrome 78.0.3904 (Linux 0.0.0) ERROR: 'ERROR', TypeError: Cannot read property 'temperature' of undefined
+TypeError: Cannot read property 'temperature' of undefined
+    at WeatherDetails.onTownChange (http://localhost:9876/_karma_webpack_/src/app/weatherDetails/weatherDetails.component.ts:28:37)
+    at WeatherDetails_Template_input_input_4_listener (ng:///WeatherDetails.js:64:22)
+    at executeListenerWithErrorHandling (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14415:1)
+    at wrapListenerIn_markDirtyAndPreventDefault (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14456:1)
+    at HTMLInputElement.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js:582:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:399:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:323:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Object.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:273:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Object.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:27136:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Zone.runTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:167:1)
+    at ZoneTask.invokeTask [as invoke] (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:480:1)
+    at invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:1621:1)
+    at HTMLInputElement.globalZoneAwareCallback (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:1647:1)
+,HeadlessChrome 78.0.3904 (Linux 0.0.0) LOG: 'florida'
+,HeadlessChrome 78.0.3904 (Linux 0.0.0) ERROR: 'ERROR', TypeError: Cannot read property 'temperature' of undefined
+TypeError: Cannot read property 'temperature' of undefined
+    at WeatherDetails.onTownChange (http://localhost:9876/_karma_webpack_/src/app/weatherDetails/weatherDetails.component.ts:28:37)
+    at WeatherDetails_Template_input_input_4_listener (ng:///WeatherDetails.js:64:22)
+    at executeListenerWithErrorHandling (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14415:1)
+    at wrapListenerIn_markDirtyAndPreventDefault (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14456:1)
+    at HTMLInputElement.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js:582:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:399:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:323:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Object.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:273:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Object.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:27136:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Zone.runTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:167:1)
+    at ZoneTask.invokeTask [as invoke] (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:480:1)
+    at invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:1621:1)
+    at HTMLInputElement.globalZoneAwareCallback (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:1647:1)
+,HeadlessChrome 78.0.3904 (Linux 0.0.0) LOG: 'dallas'
+,HeadlessChrome 78.0.3904 (Linux 0.0.0) ERROR: 'ERROR', TypeError: Cannot read property 'temperature' of undefined
+TypeError: Cannot read property 'temperature' of undefined
+    at WeatherDetails.onTownChange (http://localhost:9876/_karma_webpack_/src/app/weatherDetails/weatherDetails.component.ts:28:37)
+    at WeatherDetails_Template_input_input_4_listener (ng:///WeatherDetails.js:64:22)
+    at executeListenerWithErrorHandling (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14415:1)
+    at wrapListenerIn_markDirtyAndPreventDefault (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:14456:1)
+    at HTMLInputElement.<anonymous> (http://localhost:9876/_karma_webpack_/node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js:582:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:399:1)
+    at ProxyZoneSpec.push../node_modules/zone.js/dist/zone-testing.js.ProxyZoneSpec.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-testing.js:323:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Object.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:273:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Object.onInvokeTask (http://localhost:9876/_karma_webpack_/node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js:27136:1)
+    at ZoneDelegate.invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:398:1)
+    at Zone.runTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:167:1)
+    at ZoneTask.invokeTask [as invoke] (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:480:1)
+    at invokeTask (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:1621:1)
+    at HTMLInputElement.globalZoneAwareCallback (http://localhost:9876/_karma_webpack_/node_modules/zone.js/dist/zone-evergreen.js:1647:1)
+
+]]>
+  </system-out>
+  <system-err/>
+</testsuite>
