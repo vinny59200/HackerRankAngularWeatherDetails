@@ -9,6 +9,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class WeatherDetails implements OnInit {
   @Input() weatherData: data[];
 
+  exist: boolean;
   town: string = '';
   temperature: string = '';
   wind: string = '';
@@ -23,6 +24,7 @@ export class WeatherDetails implements OnInit {
     // let num = parseInt(string) * 9 / 5 + 32;
     // this.fahrenheit = num.toString();
     const filteredResult = this.weatherData.find((e) => e.name == searchValue);
+    if(filteredResult)this.exist=true;else this.exist=false;
     this.temperature=filteredResult.temperature;
     this.humidity=filteredResult.humidity;
     this.wind=filteredResult.wind;

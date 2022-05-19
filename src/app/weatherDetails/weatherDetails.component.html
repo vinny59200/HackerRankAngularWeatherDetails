@@ -8,7 +8,7 @@
 
   <section class="mt-20 layout-row align-items-center justify-content-center">
     <div class="card outlined">
-        <div data-test-id="weather-details" class="card-text pt-10 layout-row justify-content-between">
+        <div *ngIf="exist" data-test-id="weather-details" class="card-text pt-10 layout-row justify-content-between">
             <div class="mt-20 outlined">
               <button class="icon-only mx-2">
                 <i class="material-icons">wb_sunny</i>
@@ -24,7 +24,7 @@
               </div>
             </div>
         </div>
-        <div data-test-id="no-results" class="card-text"></div>
+        <div *ngIf="!exist" data-test-id="no-results" class="card-text">No Results Found</div>
     </div>
   </section>
 </div>
